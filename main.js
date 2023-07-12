@@ -66,26 +66,38 @@ imprimirPalabra ("hola", 4);
 let nombres = [ "Ramón","Soledad", "Micaela", "Jorge", "Gabriel", "Sebastián" ];
 
 function valoresArray ( nombres ) {
-    for (let i = 0; i < nombres.length; i++) {
+    for ( let i = 0; i < nombres.length; i++ ) {
         console.log ( nombres[i] );
     }
 }
 
-valoresArray ([nombres]);
-
+valoresArray (nombres);
 
 // 7 - Crear una función que reciba un array con 10 números e imprima por consola todos los valores de ese array, menos el que se encuentre en la 5ta posición del mismo. Ayuda: Recuerden que el primer índice de un array es "0".
 
-let arrayNum = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let arrayNum = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ];
 
-function posiciónCinco (arrayNum) {
-    for (let i = 0; i < arrayNum.length; i++) {
-        if (i !== 4)
-            continue;
-        console.log(arrayNum [i]);
+function posicionCinco ( arrayNum ) {
+    for ( let i = 0; i < arrayNum.length; i++ ) {
+        if ( i !== 4 ) {
+            console.log ( arrayNum[i] )
+        }
     }
 }
 
-posiciónCinco ([arrayNum]);
+posicionCinco (arrayNum);
 
 // 8 - Crea una función que reciba un array de números y un número por parámetro e imprima por consola cada número del array multiplicado por el número pasado por parámetro.
+
+//let arrayNum = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ];
+let num = 2;
+
+function arrayMultiplicado ( arrayNum, num ) {
+    for ( let i = 0; i < arrayNum.length; i++ ) {
+      console.log ( arrayNum[i] * num );
+    }
+}
+
+arrayMultiplicado (arrayNum, num);
+
+
